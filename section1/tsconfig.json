@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "outDir": "dist",
+    "strict": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "undici-types": ["node_modules/undici/types"]
+    }
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": ["src"]
+}
