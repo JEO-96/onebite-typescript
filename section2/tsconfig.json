@@ -1,18 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "node",
-        "outDir": "dist",
-        "strict": true,
-        "moduleDetection": "force",
-        "baseUrl": ".",
-        "paths": {
-        "undici-types": ["node_modules/undici/types"]
-        }
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "undici-types": ["node_modules/undici/types"]
     },
-    "ts-node": {
-        "esm": true
-    },
-    "include": ["src"]
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
 }

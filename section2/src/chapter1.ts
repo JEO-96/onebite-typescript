@@ -1,31 +1,33 @@
+export {};
+
 // number
-let num1: number = 123;
-let num2: number = -123;
-let num3: number = 0.123;
-let num4: number = -0.123;
-let num5: number = Infinity;
-let num6: number = --Infinity;
-let num7: number = NaN;
+const num1: number = 123;
+const num2: number = -123;
+const num3: number = 0.123;
+const num4: number = -0.123;
+const num5: number = Infinity;
+const num6: number = -Infinity;
+const num7: number = NaN;
 
 // string
-let str1: string = "hello";
-let str2: string = 'hello';
-let str3: string = `hello`;
-let str4: string = `hello ${num1}`
+const str1: string = "hello";
+const str2: string = 'hello';
+const str3: string = `hello`;
+const str4: string = `hello ${num1}`
 
 // boolean
-let bool1: boolean = true;
-let bool2: boolean = false;
+const bool1: boolean = true;
+const bool2: boolean = false;
 
 // null
-let null1: null = null;
+const null1: null = null;
 
 // undefined
-let unde1: undefined = undefined;
+const unde1: undefined = undefined;
 
 // 리터럴 타입
-let numA: 10 = 10;
+const numA = 10 as const;
 
-let strA: "hello" = "hello";
+const strA = "hello" as const;
 
-let boolA: true = true;
+const boolA = true as const;

@@ -2,17 +2,21 @@
   "name": "section2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --loader ./loader.mjs"
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.14.11",
-    "typescript": "^4.x.x",
-    "ts-node": "^10.x.x"
+    "typescript": "^4.x.x"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^7.16.1",
+    "@typescript-eslint/eslint-plugin": "^7.16.1"
   }
 }
